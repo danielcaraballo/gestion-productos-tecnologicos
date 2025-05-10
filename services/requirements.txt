@@ -5,6 +5,7 @@ Django==5.2.1
 django-admin-interface==0.30.0
 django-colorfield==0.14.0
 django-cors-headers==4.7.0
+django-simple-history==3.8.0
 djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.0
 drf-yasg==1.21.10
