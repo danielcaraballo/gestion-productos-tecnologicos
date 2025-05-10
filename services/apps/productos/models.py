@@ -1,5 +1,7 @@
 from django.db import models
 from django.core.exceptions import ValidationError
+from django.contrib.auth import get_user_model
+from simple_history.models import HistoricalRecords
 
 
 class Estatus(models.Model):
@@ -110,6 +112,8 @@ class Solicitante(models.Model):
     sub_dependencia = models.ForeignKey(
         SubDependencia, on_delete=models.PROTECT, null=True, blank=True)
 
+    historial = HistoricalRecords()
+
     def clean(self):
         if self.sub_dependencia:
             if self.sub_dependencia.dependencia != self.dependencia:
@@ -144,6 +148,8 @@ class Responsable(models.Model):
     apellido = models.CharField(max_length=100)
     rol = models.ForeignKey(RolResponsable, on_delete=models.PROTECT)
 
+    historial = HistoricalRecords()
+
     def __str__(self) -> str:
         return f"{self.nombre} {self.apellido} - {self.rol}"
 
@@ -164,6 +170,8 @@ class Producto(models.Model):
         Dependencia, related_name="productos_asignados", on_delete=models.PROTECT)
     subdependencia_usuaria = models.ForeignKey(
         SubDependencia, on_delete=models.PROTECT, null=True, blank=True)
+
+    historial = HistoricalRecords()
 
     def clean(self):
         if self.subdependencia_usuaria:
@@ -200,6 +208,8 @@ class TrabajoOperativo(models.Model):
     responsables = models.ManyToManyField('Responsable')
     activo = models.BooleanField(default=True)
 
+    historial = HistoricalRecords()
+
     def __str__(self):
         return f"{self.producto.nombre} - {self.frecuencia}"
 
@@ -213,6 +223,8 @@ class TrabajoOperativo(models.Model):
 class TecnologiaProducto(models.Model):
     tecnologia = models.ForeignKey(Tecnologia, on_delete=models.PROTECT)
     producto = models.ForeignKey(Producto, on_delete=models.PROTECT)
+
+    historial = HistoricalRecords()
 
     def __str__(self) -> str:
         return f"{self.producto.nombre} - {self.tecnologia.nombre}"
@@ -229,6 +241,8 @@ class TecnologiaProducto(models.Model):
 class ResponsableProducto(models.Model):
     responsable = models.ForeignKey(Responsable, on_delete=models.PROTECT)
     producto = models.ForeignKey(Producto, on_delete=models.PROTECT)
+
+    historial = HistoricalRecords()
 
     def __str__(self) -> str:
         return f"{self.producto.nombre} - {self.responsable.nombre}"

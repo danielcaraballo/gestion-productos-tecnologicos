@@ -1,4 +1,5 @@
 from django.contrib import admin
+from simple_history.admin import SimpleHistoryAdmin
 from .models import (Estatus, Categoria, EnfoqueTecnologia, LenguajeProgramacion, Tecnologia,
                      SubDependencia, Dependencia, CargoSolicitante, Solicitante, RolResponsable, Responsable,
                      Producto, TrabajoOperativo, TecnologiaProducto, ResponsableProducto)
@@ -14,7 +15,7 @@ class ResponsableInline(admin.TabularInline):
     extra = 0
 
 
-class ProductoAdmin(admin.ModelAdmin):
+class ProductoAdmin(SimpleHistoryAdmin):
     list_display = ('nombre', 'categoria', 'estatus', 'direccion_url')
     search_fields = ('nombre', 'descripcion')
     list_filter = ('estatus', 'categoria')

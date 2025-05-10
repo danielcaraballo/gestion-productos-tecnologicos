@@ -61,6 +61,7 @@ THIRDS_APPS = [
     'rest_framework_simplejwt',
     'drf_yasg',
     'corsheaders',
+    'simple_history',
 ]
 
 INSTALLED_APPS = BASE_APPS + LOCALS_APPS + THIRDS_APPS
@@ -81,6 +82,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'simple_history.middleware.HistoryRequestMiddleware',
 ]
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
