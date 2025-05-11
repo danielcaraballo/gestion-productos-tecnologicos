@@ -2,9 +2,9 @@
 
 # Gestión de Productos Tecnológicos
 
-Aplicación web para la gestión integral de productos tecnológicos, tales como soluciones web, aplicaciones móviles, portales corporativos y APIs. Esta herramienta está diseñada para facilitar el control, documentación y seguimiento de productos en entornos técnicos. 
+Aplicación web para la gestión integral de productos tecnológicos, tales como aplicaciones web, aplicaciones móviles, portales institucionales y entre otros. Esta herramienta está diseñada para facilitar la gestion, documentación y seguimiento de los productos.
 
-El backend está desarrollado con **Django** y **Django Rest Framework**, asegurando una arquitectura escalable y mantenible. En su versión actual, el frontend se encuentra implementado con **JavaScript Vanilla**, permitiendo una interfaz ligera y funcional.
+Este proyecto está organizado como un monorepo, donde el frontend y el backend coexisten en carpetas separadas. El backend está desarrollado con **Django**, asegurando una arquitectura escalable y mantenible. El frontend se encuentra implementado con **JavaScript Vanilla**, permitiendo una interfaz ligera y funcional.
 
 ---
 
@@ -19,48 +19,81 @@ El backend está desarrollado con **Django** y **Django Rest Framework**, asegur
 
 ## 📦 Versión Actual
 
-### v1.0.0
+### v1.2
 
 > **Nota:** Esta es una versión inicial en fase de desarrollo. Es posible que se introduzcan cambios importantes en futuras actualizaciones.
 
 ---
+
+### 📂 Estructura del Monorepo
+
+```bash
+gestion-productos-tecnologicos/
+├── client/                 # Frontend (JavaScript Vanilla)
+│   ├── src/
+│   │   ├── components/     # Navbar, formularios, etc.
+│   │   └── services/       # Funciones para consumir la API
+│   └── vite.config.js      # Configuración del bundler Vite
+│
+└── services/               # Backend (Django)
+    ├── apps/
+    │   ├── productos/      # Modelos, vistas y rutas de productos
+    │   └── usuarios/       # Gestión de usuarios y autenticación
+    ├── config/             # Configuración del proyecto Django
+    ├── deployment/         # Archivos de despliegue (nginx, systemd, etc.)
+    └── manage.py
+```
 
 ## 🛠️ Instalación
 
 Sigue estos pasos para instalar y ejecutar el proyecto localmente:
 
 1. **Clona el repositorio**:
+
    ```bash
    git clone https://github.com/danielcaraballo/gestion-productos-tecnologicos.git
    cd gestion-productos-tecnologicos
    ```
 
-2. **Crea un entorno virtual**:
+2. **Instalación del Backend (Django)**:
+
    ```bash
+   cd services
    python -m venv venv
    source venv/bin/activate  # En Windows: venv\Scripts\activate
-   ```
-
-3. **Instala las dependencias**:
-   ```bash
    pip install -r requirements.txt
+
    ```
 
-4. **Configura las variables de entorno**:
-   - Crea un archivo `.env` en el directorio raíz.
-   - Usa `.env.example` como referencia.
+3. **Configura las variables de entorno**:
 
-5. **Aplica las migraciones de base de datos**:
+   - Copia el archivo de ejemplo:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   - Asegúrate de configurar las variables como SECRET_KEY, DEBUG, etc.
+
+4. **Aplica las migraciones de base de datos**:
+
    ```bash
    python manage.py migrate
    ```
 
-6. **Inicia el servidor de desarrollo**:
+5. **Inicia el servidor de desarrollo**:
+
    ```bash
    python manage.py runserver
    ```
 
-Accede a la aplicación en `http://127.0.0.1:8000/`.
+6. **Instalación del Frontend (Vite + JS Vanilla)**:
+   - En otra terminal:
+   ```bash
+   cd client
+   npm install
+   npm run dev
+   ```
 
 ---
 
@@ -79,7 +112,7 @@ Accede a la aplicación en `http://127.0.0.1:8000/`.
    ```
 4. Realiza tus cambios y haz commit:
    ```bash
-   git commit -m "feat(mi-feature): descripción breve del cambio"
+   git commit -m "feat(contexto): descripción breve del cambio"
    ```
 5. Sube tus cambios:
    ```bash
@@ -89,6 +122,6 @@ Accede a la aplicación en `http://127.0.0.1:8000/`.
 
 ---
 
-© 2024 - Daniel Caraballo. Todos los derechos reservados.  
+© 2025 - Daniel Caraballo. Todos los derechos reservados.
 
 > Si este proyecto te ha sido útil, ¡considera darle una estrella ⭐ al repositorio!

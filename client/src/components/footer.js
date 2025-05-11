@@ -1,21 +1,21 @@
 class footer extends HTMLElement {
-    constructor() {
-        super();
-        this.innerHTML = /*html*/`
+  constructor() {
+    super();
+    this.innerHTML = /*html*/ `
             <footer class="footer footer-transparent d-print-none">
             <div class="container-xl">
             <div class="row text-center align-items-center flex-row-reverse">
                 <div class="col-lg-auto ms-lg-auto">
                 <ul class="list-inline list-inline-dots mb-0">
                     <li class="list-inline-item">
-                    v1.0
+                    v1.2
                     </li>
                 </ul>
                 </div>
                 <div class="col-12 col-lg-auto mt-3 mt-lg-0">
                 <ul class="list-inline list-inline-dots mb-0">
                     <li class="list-inline-item">
-                        &copy; 2024 - Daniel Caraballo. Todos los derechos reservados.
+                        &copy; 2025 - Daniel Caraballo. Todos los derechos reservados.
                     </li>
                 </ul>
                 </div>
@@ -23,7 +23,7 @@ class footer extends HTMLElement {
             </div>
         </footer>
         `;
-    }
+  }
 }
 
-customElements.define('footer-component', footer);
+customElements.define("footer-component", footer);
