@@ -52,8 +52,9 @@ BASE_APPS = [
 ]
 
 LOCALS_APPS = [
+    'apps.catalogos',
+    'apps.portafolio',
     'apps.usuarios',
-    'apps.productos',
 ]
 
 THIRDS_APPS = [
@@ -125,15 +126,6 @@ DATABASES = {
         'PORT': config('DB_PORT'),
     }
 }
-
-# Database SQLite3
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'db.sqlite3',
-#     }
-# }
 
 
 # Password validation

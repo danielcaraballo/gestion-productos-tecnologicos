@@ -1,8 +1,9 @@
 from django.contrib import admin
 from simple_history.admin import SimpleHistoryAdmin
-from .models import (Estatus, Categoria, EnfoqueTecnologia, LenguajeProgramacion, Tecnologia,
-                     SubDependencia, Dependencia, CargoSolicitante, Solicitante, RolResponsable, Responsable,
-                     Producto, TrabajoOperativo, TecnologiaProducto, ResponsableProducto)
+from .models import (Solicitante, Responsable, Producto, TrabajoOperativo,
+                     TecnologiaProducto, ResponsableProducto,)
+
+# Register your models here.
 
 
 class TecnologiaInline(admin.TabularInline):
@@ -32,17 +33,7 @@ class TrabajoOperativoAdmin(admin.ModelAdmin):
 admin.site.register(Producto, ProductoAdmin)
 admin.site.register(TrabajoOperativo, TrabajoOperativoAdmin)
 
-# Register your models here.
-admin.site.register(Estatus)
-admin.site.register(Categoria)
-admin.site.register(EnfoqueTecnologia)
-admin.site.register(LenguajeProgramacion)
-admin.site.register(Tecnologia)
-admin.site.register(SubDependencia)
-admin.site.register(Dependencia)
-admin.site.register(CargoSolicitante)
 admin.site.register(Solicitante)
-admin.site.register(RolResponsable)
 admin.site.register(Responsable)
 admin.site.register(TecnologiaProducto)
 admin.site.register(ResponsableProducto)
