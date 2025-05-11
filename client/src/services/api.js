@@ -4,7 +4,7 @@ import CONFIG from "../assets/js/config.js";
 export const fetchStatusOptions = async () => {
   try {
     const response = await axios.get(
-      `${CONFIG.API_BASE_URL}/productos/producto-estatus/`
+      `${CONFIG.API_BASE_URL}/portafolio/producto-estatus/`
     );
     return response.data; // Devuelve los datos de la API (array de objetos {id, nombre})
   } catch (error) {
@@ -17,7 +17,7 @@ export const fetchStatusOptions = async () => {
 export const addProduct = async (newProduct) => {
   try {
     const response = await axios.post(
-      `${CONFIG.API_BASE_URL}/productos/productos/`,
+      `${CONFIG.API_BASE_URL}/portafolio/productos/`,
       newProduct
     );
     return response.data; // Devuelve la respuesta del servidor

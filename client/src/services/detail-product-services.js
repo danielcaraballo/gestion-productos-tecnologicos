@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       axios
-        .get(`${CONFIG.API_BASE_URL}/productos/productos/${productId}/detail/`)
+        .get(`${CONFIG.API_BASE_URL}/portafolio/productos/${productId}/detail/`)
         .then((response) => {
           const productData = response.data;
           console.log(response.data); // Inspecciona la estructura de los datos
@@ -69,10 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 return "badge bg-blue text-blue-fg tag-status badge-empty";
             }
           }
-
-          // modalTechnologies.textContent = productData.tecnologias
-          //   .map((t) => t.nombre)
-          //   .join(", ");
 
           // Obtener los tags de las tecnologías
           const tecnologiaTags = productData.tecnologias

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Función para obtener los productos desde la API
 function fetchProducts() {
   axios
-    .get(`${CONFIG.API_BASE_URL}/productos/productos/`)
+    .get(`${CONFIG.API_BASE_URL}/portafolio/productos/`)
     .then((response) => {
       allProducts = response.data;
       if (allProducts.length > 0) {

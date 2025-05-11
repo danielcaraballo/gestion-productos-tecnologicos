@@ -2,13 +2,15 @@ import CONFIG from "./config.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   axios
-    .get(`${CONFIG.API_BASE_URL}/productos/producto-estatus-count/`)
+    .get(`${CONFIG.API_BASE_URL}/portafolio/producto-estatus-count/`)
     .then((response) => {
       const data = response.data;
 
       // Verifica que los elementos existan antes de acceder a ellos
       const contadorOperativos = document.getElementById("contador-operativos");
-      const contadorMantenimiento = document.getElementById("contador-mantenimiento");
+      const contadorMantenimiento = document.getElementById(
+        "contador-mantenimiento"
+      );
       const contadorInactivos = document.getElementById("contador-inactivos");
       const contadorRetirados = document.getElementById("contador-retirados");
 

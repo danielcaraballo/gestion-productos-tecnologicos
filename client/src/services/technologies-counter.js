@@ -15,7 +15,7 @@ const colors = [
 
 window.addEventListener("DOMContentLoaded", () => {
   axios
-    .get(`${CONFIG.API_BASE_URL}/productos/productos-tecnologias-count/`)
+    .get(`${CONFIG.API_BASE_URL}/portafolio/productos-tecnologias-count/`)
     .then((response) => {
       const data = response.data;
       // console.log(data); Para verificar que los datos se obtienen correctamente

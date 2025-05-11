@@ -2,7 +2,7 @@ import CONFIG from "./config.js";
 
 window.onload = function () {
   axios
-    .get(`${CONFIG.API_BASE_URL}/productos/producto-estatus-count/`)
+    .get(`${CONFIG.API_BASE_URL}/portafolio/producto-estatus-count/`)
     .then((response) => {
       const data = response.data;
 

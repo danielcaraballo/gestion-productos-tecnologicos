@@ -1,7 +1,7 @@
 import CONFIG from "./config.js";
 
 axios
-  .get(`${CONFIG.API_BASE_URL}/productos/productos-dependencias-count/`)
+  .get(`${CONFIG.API_BASE_URL}/portafolio/productos-dependencias-count/`)
   .then((response) => {
     const dependencias = response.data;
     const tbody = document.getElementById("dependencias-tbody");
