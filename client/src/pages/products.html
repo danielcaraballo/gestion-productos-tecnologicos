@@ -47,29 +47,6 @@
                 <div class="page-pretitle">Vista</div>
                 <h2 class="page-title">Productos</h2>
               </div>
-              <!-- <div class="col-auto ms-auto d-print-none">
-              <div class="btn-list">
-                <a href="#" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal"
-                  data-bs-target="#modal-report">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
-                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M12 5l0 14" />
-                    <path d="M5 12l14 0" />
-                  </svg>
-                  Agregar producto
-                </a>
-                <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal"
-                  data-bs-target="#modal-report" aria-label="Create new report">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
-                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M12 5l0 14" />
-                    <path d="M5 12l14 0" />
-                  </svg>
-                </a>
-              </div>
-            </div> -->
             </div>
           </div>
         </div>
@@ -83,11 +60,18 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th data-sort="sort-nombre">Nombre</th>
-                        <th data-sort="sort-categoria">Categoria</th>
-                        <th data-sort="sort-tecnologias">Tecnologias</th>
-                        <th data-sort="sort-estatus">Estatus</th>
-                        <th data-sort="sort-url">Direccion URL</th>
+                        <th style="width: 300px" data-sort="sort-nombre">
+                          Nombre
+                        </th>
+                        <th style="width: 150px" data-sort="sort-categoria">
+                          Categoria
+                        </th>
+                        <th style="width: 200px" data-sort="sort-tecnologias">
+                          Tecnologias
+                        </th>
+                        <th style="width: 100px" data-sort="sort-estatus">
+                          Estatus
+                        </th>
                       </tr>
                     </thead>
                     <tbody class="table-tbody"></tbody>
@@ -154,23 +138,13 @@
         </div>
       </div>
       <detail-product></detail-product>
-      <!-- <form-add-product-component></form-add-product-component> -->
-      <!-- Footer -->
       <footer-component></footer-component>
     </div>
 
     <!-- Scripts -->
     <script src="../services/auth.js" type="module"></script>
     <script src="../services/products.js" type="module"></script>
-    <!-- <script src="../services/add-product.js" type="module"></script> -->
     <script src="../components/components.js" type="module" defer></script>
-
-    <!-- Libs JS -->
-    <!-- <script src="../assets/libs/list.js/dist/list.min.js" defer></script>
-    <script
-      src="../assets/libs/tom-select/dist/js/tom-select.base.min.js"
-      defer
-    ></script> -->
 
     <!-- Tabler Core -->
     <script src="../assets/js/tabler.min.js" defer></script>

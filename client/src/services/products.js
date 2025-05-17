@@ -85,7 +85,6 @@ function generateRowHTML(product) {
                 <span class="${statusClass}"></span>${product.estatus.nombre}
             </span>
         </td>
-        <td><a href="${product.direccion_url}" target="_blank">${product.direccion_url}</a></td>
       </tr>
     `;
 }
