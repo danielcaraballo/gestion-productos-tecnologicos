@@ -17,7 +17,7 @@ class Estatus(models.Model):
 
 class Categoria(models.Model):
     nombre = models.CharField(
-        max_length=100, verbose_name="Nombre de la Categoria")
+        max_length=50, verbose_name="Nombre de la Categoria")
 
     def __str__(self) -> str:
         return self.nombre
@@ -52,7 +52,7 @@ class LenguajeProgramacion(models.Model):
 
 class Tecnologia(models.Model):
     nombre = models.CharField(
-        max_length=100, verbose_name="Nombre de la Tecnologia")
+        max_length=50, verbose_name="Nombre de la Tecnologia")
     enfoque = models.ForeignKey(EnfoqueTecnologia, on_delete=models.PROTECT)
     lenguaje = models.ForeignKey(
         LenguajeProgramacion, on_delete=models.PROTECT)
@@ -92,7 +92,7 @@ class SubDependencia(models.Model):
 
 
 class CargoSolicitante(models.Model):
-    nombre = models.CharField(max_length=100, verbose_name="Nombre del Cargo")
+    nombre = models.CharField(max_length=50, verbose_name="Nombre del Cargo")
 
     def __str__(self) -> str:
         return self.nombre
@@ -103,7 +103,7 @@ class CargoSolicitante(models.Model):
 
 
 class RolResponsable(models.Model):
-    nombre = models.CharField(max_length=100)
+    nombre = models.CharField(max_length=50)
 
     def __str__(self) -> str:
         return self.nombre
@@ -111,3 +111,17 @@ class RolResponsable(models.Model):
     class Meta:
         verbose_name = "Rol de Responsable"
         verbose_name_plural = "Roles de Responsables"
+
+
+# Modelos para el catálogo de componentes
+
+
+class TipoComponente(models.Model):
+    nombre = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.nombre
+
+    class Meta:
+        verbose_name = "Tipo de Componente"
+        verbose_name_plural = "Tipos de Componentes"

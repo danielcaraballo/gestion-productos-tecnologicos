@@ -1,7 +1,9 @@
+import datetime
 from django.db import models
 from django.core.exceptions import ValidationError
 from simple_history.models import HistoricalRecords
-from apps.catalogos.models import Categoria, Estatus, Dependencia, SubDependencia, CargoSolicitante, RolResponsable, Tecnologia
+from apps.catalogos.models import (Categoria, Estatus, Dependencia, SubDependencia,
+                                   CargoSolicitante, RolResponsable, Tecnologia, TipoComponente)
 
 
 # Create your models here.
@@ -54,15 +56,15 @@ class Responsable(models.Model):
 class Producto(models.Model):
     nombre = models.CharField(max_length=200)
     descripcion = models.TextField()
-    direccion_url = models.URLField()
-    fecha_lanzamiento = models.DateField()
+    fecha_lanzamiento = models.DateField(default=datetime.date(2010, 1, 1))
     categoria = models.ForeignKey(Categoria, on_delete=models.PROTECT)
-    solicitante = models.ForeignKey(Solicitante, on_delete=models.PROTECT)
-    estatus = models.ForeignKey(Estatus, on_delete=models.PROTECT)
+    solicitante = models.ForeignKey(
+        Solicitante, on_delete=models.PROTECT, null=True, blank=True)
     dependencia_usuaria = models.ForeignKey(
-        Dependencia, related_name="productos_asignados", on_delete=models.PROTECT)
+        Dependencia, related_name="productos_asignados", on_delete=models.PROTECT, null=True, blank=True)
     subdependencia_usuaria = models.ForeignKey(
         SubDependencia, on_delete=models.PROTECT, null=True, blank=True)
+    estatus = models.ForeignKey(Estatus, on_delete=models.PROTECT)
 
     historial = HistoricalRecords()
 
@@ -82,6 +84,23 @@ class Producto(models.Model):
     class Meta:
         verbose_name = "Producto"
         verbose_name_plural = "Productos"
+
+
+class Componente(models.Model):
+    producto = models.ForeignKey(
+        'Producto', on_delete=models.CASCADE, related_name='componentes')
+    nombre = models.CharField(max_length=50)
+    direccion_url = models.URLField()
+    tipo = models.ForeignKey(TipoComponente, on_delete=models.PROTECT)
+
+    historial = HistoricalRecords()
+
+    def __str__(self) -> str:
+        return f"{self.nombre} - {self.producto.nombre}"
+
+    class Meta:
+        verbose_name = "Componente"
+        verbose_name_plural = "Componentes"
 
 
 class TrabajoOperativo(models.Model):
