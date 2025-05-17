@@ -19,7 +19,7 @@ Este proyecto está organizado como un monorepo, donde el frontend y el backend 
 
 ## 📦 Versión Actual
 
-### v1.2
+### v1.5.0
 
 > **Nota:** Esta es una versión inicial en fase de desarrollo. Es posible que se introduzcan cambios importantes en futuras actualizaciones.
 

@@ -8,7 +8,7 @@ class footer extends HTMLElement {
                 <div class="col-lg-auto ms-lg-auto">
                 <ul class="list-inline list-inline-dots mb-0">
                     <li class="list-inline-item">
-                    v1.2
+                    v1.5.0
                     </li>
                 </ul>
                 </div>
