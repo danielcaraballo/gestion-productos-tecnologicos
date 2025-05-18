@@ -1,0 +1,1372 @@
+[
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Administrador",
+    "permissions": [
+      5,
+      6,
+      7,
+      8,
+      1,
+      2,
+      3,
+      4,
+      13,
+      14,
+      15,
+      16,
+      9,
+      10,
+      11,
+      12,
+      17,
+      18,
+      19,
+      20,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      57,
+      58,
+      59,
+      60,
+      21,
+      22,
+      23,
+      24,
+      93,
+      94,
+      95,
+      96,
+      89,
+      90,
+      91,
+      92,
+      109,
+      110,
+      111,
+      112,
+      69,
+      70,
+      71,
+      72,
+      101,
+      102,
+      103,
+      104,
+      117,
+      118,
+      119,
+      120,
+      73,
+      74,
+      75,
+      76,
+      85,
+      86,
+      87,
+      88,
+      81,
+      82,
+      83,
+      84,
+      77,
+      78,
+      79,
+      80,
+      97,
+      98,
+      99,
+      100,
+      121,
+      122,
+      123,
+      124,
+      129,
+      130,
+      131,
+      132,
+      105,
+      106,
+      107,
+      108,
+      125,
+      126,
+      127,
+      128,
+      113,
+      114,
+      115,
+      116,
+      25,
+      26,
+      27,
+      28
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Analista",
+    "permissions": [
+      93,
+      94,
+      96,
+      77,
+      78,
+      80,
+      97,
+      98,
+      100,
+      121,
+      122,
+      124,
+      129,
+      130,
+      132,
+      105,
+      106,
+      108,
+      125,
+      126,
+      128,
+      113,
+      114,
+      116
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 3,
+  "fields": {
+    "name": "Consultor",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add Theme",
+    "content_type": 1,
+    "codename": "add_theme"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change Theme",
+    "content_type": 1,
+    "codename": "change_theme"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete Theme",
+    "content_type": 1,
+    "codename": "delete_theme"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view Theme",
+    "content_type": 1,
+    "codename": "view_theme"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 2,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 2,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 2,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 2,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 4,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 4,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 4,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 4,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 5,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 5,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 5,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 5,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 6,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 6,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 6,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 6,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 7,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 7,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 7,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 7,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Cargo del Solicitante",
+    "content_type": 8,
+    "codename": "add_cargosolicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Cargo del Solicitante",
+    "content_type": 8,
+    "codename": "change_cargosolicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Cargo del Solicitante",
+    "content_type": 8,
+    "codename": "delete_cargosolicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Cargo del Solicitante",
+    "content_type": 8,
+    "codename": "view_cargosolicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Categoría",
+    "content_type": 9,
+    "codename": "add_categoria"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Categoría",
+    "content_type": 9,
+    "codename": "change_categoria"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Categoría",
+    "content_type": 9,
+    "codename": "delete_categoria"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Categoría",
+    "content_type": 9,
+    "codename": "view_categoria"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Dependencia",
+    "content_type": 10,
+    "codename": "add_dependencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Dependencia",
+    "content_type": 10,
+    "codename": "change_dependencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Dependencia",
+    "content_type": 10,
+    "codename": "delete_dependencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Dependencia",
+    "content_type": 10,
+    "codename": "view_dependencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Enfoque de la Tecnologia",
+    "content_type": 11,
+    "codename": "add_enfoquetecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Enfoque de la Tecnologia",
+    "content_type": 11,
+    "codename": "change_enfoquetecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Enfoque de la Tecnologia",
+    "content_type": 11,
+    "codename": "delete_enfoquetecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Enfoque de la Tecnologia",
+    "content_type": 11,
+    "codename": "view_enfoquetecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Estatus",
+    "content_type": 12,
+    "codename": "add_estatus"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change Estatus",
+    "content_type": 12,
+    "codename": "change_estatus"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Estatus",
+    "content_type": 12,
+    "codename": "delete_estatus"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Estatus",
+    "content_type": 12,
+    "codename": "view_estatus"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add Lenguaje de Programacion",
+    "content_type": 13,
+    "codename": "add_lenguajeprogramacion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change Lenguaje de Programacion",
+    "content_type": 13,
+    "codename": "change_lenguajeprogramacion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete Lenguaje de Programacion",
+    "content_type": 13,
+    "codename": "delete_lenguajeprogramacion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view Lenguaje de Programacion",
+    "content_type": 13,
+    "codename": "view_lenguajeprogramacion"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add Rol de Responsable",
+    "content_type": 14,
+    "codename": "add_rolresponsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change Rol de Responsable",
+    "content_type": 14,
+    "codename": "change_rolresponsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete Rol de Responsable",
+    "content_type": 14,
+    "codename": "delete_rolresponsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view Rol de Responsable",
+    "content_type": 14,
+    "codename": "view_rolresponsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add Tipo de Componente",
+    "content_type": 15,
+    "codename": "add_tipocomponente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change Tipo de Componente",
+    "content_type": 15,
+    "codename": "change_tipocomponente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete Tipo de Componente",
+    "content_type": 15,
+    "codename": "delete_tipocomponente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view Tipo de Componente",
+    "content_type": 15,
+    "codename": "view_tipocomponente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add SubDependencia",
+    "content_type": 16,
+    "codename": "add_subdependencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change SubDependencia",
+    "content_type": 16,
+    "codename": "change_subdependencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete SubDependencia",
+    "content_type": 16,
+    "codename": "delete_subdependencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view SubDependencia",
+    "content_type": 16,
+    "codename": "view_subdependencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add Tecnología",
+    "content_type": 17,
+    "codename": "add_tecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change Tecnología",
+    "content_type": 17,
+    "codename": "change_tecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete Tecnología",
+    "content_type": 17,
+    "codename": "delete_tecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view Tecnología",
+    "content_type": 17,
+    "codename": "view_tecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add historical Responsable",
+    "content_type": 18,
+    "codename": "add_historicalresponsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change historical Responsable",
+    "content_type": 18,
+    "codename": "change_historicalresponsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete historical Responsable",
+    "content_type": 18,
+    "codename": "delete_historicalresponsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view historical Responsable",
+    "content_type": 18,
+    "codename": "view_historicalresponsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add historical Solicitante",
+    "content_type": 19,
+    "codename": "add_historicalsolicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change historical Solicitante",
+    "content_type": 19,
+    "codename": "change_historicalsolicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete historical Solicitante",
+    "content_type": 19,
+    "codename": "delete_historicalsolicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view historical Solicitante",
+    "content_type": 19,
+    "codename": "view_historicalsolicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add Producto",
+    "content_type": 20,
+    "codename": "add_producto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change Producto",
+    "content_type": 20,
+    "codename": "change_producto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete Producto",
+    "content_type": 20,
+    "codename": "delete_producto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view Producto",
+    "content_type": 20,
+    "codename": "view_producto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can add historical Trabajo Operativo",
+    "content_type": 21,
+    "codename": "add_historicaltrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 82,
+  "fields": {
+    "name": "Can change historical Trabajo Operativo",
+    "content_type": 21,
+    "codename": "change_historicaltrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 83,
+  "fields": {
+    "name": "Can delete historical Trabajo Operativo",
+    "content_type": 21,
+    "codename": "delete_historicaltrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 84,
+  "fields": {
+    "name": "Can view historical Trabajo Operativo",
+    "content_type": 21,
+    "codename": "view_historicaltrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 85,
+  "fields": {
+    "name": "Can add historical Tecnologia del Producto",
+    "content_type": 22,
+    "codename": "add_historicaltecnologiaproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 86,
+  "fields": {
+    "name": "Can change historical Tecnologia del Producto",
+    "content_type": 22,
+    "codename": "change_historicaltecnologiaproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 87,
+  "fields": {
+    "name": "Can delete historical Tecnologia del Producto",
+    "content_type": 22,
+    "codename": "delete_historicaltecnologiaproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 88,
+  "fields": {
+    "name": "Can view historical Tecnologia del Producto",
+    "content_type": 22,
+    "codename": "view_historicaltecnologiaproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 89,
+  "fields": {
+    "name": "Can add historical Componente",
+    "content_type": 23,
+    "codename": "add_historicalcomponente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 90,
+  "fields": {
+    "name": "Can change historical Componente",
+    "content_type": 23,
+    "codename": "change_historicalcomponente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 91,
+  "fields": {
+    "name": "Can delete historical Componente",
+    "content_type": 23,
+    "codename": "delete_historicalcomponente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 92,
+  "fields": {
+    "name": "Can view historical Componente",
+    "content_type": 23,
+    "codename": "view_historicalcomponente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 93,
+  "fields": {
+    "name": "Can add Componente",
+    "content_type": 24,
+    "codename": "add_componente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 94,
+  "fields": {
+    "name": "Can change Componente",
+    "content_type": 24,
+    "codename": "change_componente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 95,
+  "fields": {
+    "name": "Can delete Componente",
+    "content_type": 24,
+    "codename": "delete_componente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 96,
+  "fields": {
+    "name": "Can view Componente",
+    "content_type": 24,
+    "codename": "view_componente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 97,
+  "fields": {
+    "name": "Can add Responsable",
+    "content_type": 25,
+    "codename": "add_responsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 98,
+  "fields": {
+    "name": "Can change Responsable",
+    "content_type": 25,
+    "codename": "change_responsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 99,
+  "fields": {
+    "name": "Can delete Responsable",
+    "content_type": 25,
+    "codename": "delete_responsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 100,
+  "fields": {
+    "name": "Can view Responsable",
+    "content_type": 25,
+    "codename": "view_responsable"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 101,
+  "fields": {
+    "name": "Can add historical Responsable del Producto",
+    "content_type": 26,
+    "codename": "add_historicalresponsableproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 102,
+  "fields": {
+    "name": "Can change historical Responsable del Producto",
+    "content_type": 26,
+    "codename": "change_historicalresponsableproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 103,
+  "fields": {
+    "name": "Can delete historical Responsable del Producto",
+    "content_type": 26,
+    "codename": "delete_historicalresponsableproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 104,
+  "fields": {
+    "name": "Can view historical Responsable del Producto",
+    "content_type": 26,
+    "codename": "view_historicalresponsableproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 105,
+  "fields": {
+    "name": "Can add Solicitante",
+    "content_type": 27,
+    "codename": "add_solicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 106,
+  "fields": {
+    "name": "Can change Solicitante",
+    "content_type": 27,
+    "codename": "change_solicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 107,
+  "fields": {
+    "name": "Can delete Solicitante",
+    "content_type": 27,
+    "codename": "delete_solicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 108,
+  "fields": {
+    "name": "Can view Solicitante",
+    "content_type": 27,
+    "codename": "view_solicitante"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 109,
+  "fields": {
+    "name": "Can add historical Producto",
+    "content_type": 28,
+    "codename": "add_historicalproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 110,
+  "fields": {
+    "name": "Can change historical Producto",
+    "content_type": 28,
+    "codename": "change_historicalproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 111,
+  "fields": {
+    "name": "Can delete historical Producto",
+    "content_type": 28,
+    "codename": "delete_historicalproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 112,
+  "fields": {
+    "name": "Can view historical Producto",
+    "content_type": 28,
+    "codename": "view_historicalproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 113,
+  "fields": {
+    "name": "Can add Trabajo Operativo",
+    "content_type": 29,
+    "codename": "add_trabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 114,
+  "fields": {
+    "name": "Can change Trabajo Operativo",
+    "content_type": 29,
+    "codename": "change_trabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 115,
+  "fields": {
+    "name": "Can delete Trabajo Operativo",
+    "content_type": 29,
+    "codename": "delete_trabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 116,
+  "fields": {
+    "name": "Can view Trabajo Operativo",
+    "content_type": 29,
+    "codename": "view_trabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 117,
+  "fields": {
+    "name": "Can add historical Responsable del Trabajo Operativo",
+    "content_type": 30,
+    "codename": "add_historicalresponsabletrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 118,
+  "fields": {
+    "name": "Can change historical Responsable del Trabajo Operativo",
+    "content_type": 30,
+    "codename": "change_historicalresponsabletrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 119,
+  "fields": {
+    "name": "Can delete historical Responsable del Trabajo Operativo",
+    "content_type": 30,
+    "codename": "delete_historicalresponsabletrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 120,
+  "fields": {
+    "name": "Can view historical Responsable del Trabajo Operativo",
+    "content_type": 30,
+    "codename": "view_historicalresponsabletrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 121,
+  "fields": {
+    "name": "Can add Responsable del Producto",
+    "content_type": 31,
+    "codename": "add_responsableproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 122,
+  "fields": {
+    "name": "Can change Responsable del Producto",
+    "content_type": 31,
+    "codename": "change_responsableproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 123,
+  "fields": {
+    "name": "Can delete Responsable del Producto",
+    "content_type": 31,
+    "codename": "delete_responsableproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 124,
+  "fields": {
+    "name": "Can view Responsable del Producto",
+    "content_type": 31,
+    "codename": "view_responsableproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 125,
+  "fields": {
+    "name": "Can add Tecnologia del Producto",
+    "content_type": 32,
+    "codename": "add_tecnologiaproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 126,
+  "fields": {
+    "name": "Can change Tecnologia del Producto",
+    "content_type": 32,
+    "codename": "change_tecnologiaproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 127,
+  "fields": {
+    "name": "Can delete Tecnologia del Producto",
+    "content_type": 32,
+    "codename": "delete_tecnologiaproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 128,
+  "fields": {
+    "name": "Can view Tecnologia del Producto",
+    "content_type": 32,
+    "codename": "view_tecnologiaproducto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 129,
+  "fields": {
+    "name": "Can add Responsable del Trabajo Operativo",
+    "content_type": 33,
+    "codename": "add_responsabletrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 130,
+  "fields": {
+    "name": "Can change Responsable del Trabajo Operativo",
+    "content_type": 33,
+    "codename": "change_responsabletrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 131,
+  "fields": {
+    "name": "Can delete Responsable del Trabajo Operativo",
+    "content_type": 33,
+    "codename": "delete_responsabletrabajooperativo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 132,
+  "fields": {
+    "name": "Can view Responsable del Trabajo Operativo",
+    "content_type": 33,
+    "codename": "view_responsabletrabajooperativo"
+  }
+}
+]
