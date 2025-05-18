@@ -93,7 +93,7 @@ class Componente(models.Model):
     producto = models.ForeignKey(
         'Producto', on_delete=models.CASCADE, related_name='componentes')
     nombre = models.CharField(max_length=50)
-    direccion_url = models.URLField()
+    direccion_url = models.URLField(unique=True)
     tipo = models.ForeignKey(TipoComponente, on_delete=models.PROTECT)
 
     historial = HistoricalRecords()
