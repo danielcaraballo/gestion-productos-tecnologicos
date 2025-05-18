@@ -1,7 +1,7 @@
 from django.contrib import admin
 from simple_history.admin import SimpleHistoryAdmin
 from .models import (Solicitante, Responsable, Producto, Componente, TrabajoOperativo,
-                     TecnologiaProducto, ResponsableProducto,)
+                     TecnologiaProducto, ResponsableProducto, ResponsableTrabajoOperativo)
 
 # Register your models here.
 
@@ -13,6 +13,11 @@ class TecnologiaInline(admin.TabularInline):
 
 class ResponsableInline(admin.TabularInline):
     model = ResponsableProducto
+    extra = 0
+
+
+class ResponsableTrabajoOperativoInline(admin.TabularInline):
+    model = ResponsableTrabajoOperativo
     extra = 0
 
 
@@ -32,13 +37,11 @@ class TrabajoOperativoAdmin(admin.ModelAdmin):
     list_display = ('producto', 'frecuencia', 'activo')
     search_fields = ('descripcion',)
     list_filter = ('frecuencia', 'activo', 'producto')
-    filter_horizontal = ('responsables',)
+    inlines = [ResponsableTrabajoOperativoInline]
 
 
 admin.site.register(Producto, ProductoAdmin)
-admin.site.register(Componente)
 admin.site.register(TrabajoOperativo, TrabajoOperativoAdmin)
+admin.site.register(Componente)
 admin.site.register(Solicitante)
 admin.site.register(Responsable)
-# admin.site.register(TecnologiaProducto)
-# admin.site.register(ResponsableProducto)

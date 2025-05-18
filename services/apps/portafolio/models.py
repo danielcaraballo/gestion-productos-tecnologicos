@@ -119,8 +119,8 @@ class TrabajoOperativo(models.Model):
             ('eventual', 'Eventual'),
         ]
     )
-    observaciones = models.TextField(blank=True, null=True)
-    responsables = models.ManyToManyField('Responsable')
+    observaciones = models.TextField(
+        default="Sin observaciones.", blank=True, null=True)
     activo = models.BooleanField(default=True)
 
     historial = HistoricalRecords()
@@ -168,4 +168,25 @@ class ResponsableProducto(models.Model):
         constraints = [
             models.UniqueConstraint(
                 fields=['responsable', 'producto'], name='unique_responsable_producto')
+        ]
+
+
+class ResponsableTrabajoOperativo(models.Model):
+    responsable = models.ForeignKey('Responsable', on_delete=models.PROTECT)
+    trabajo_operativo = models.ForeignKey(
+        'TrabajoOperativo', on_delete=models.PROTECT)
+
+    historial = HistoricalRecords()
+
+    def __str__(self) -> str:
+        return f"{self.trabajo_operativo} - {self.responsable}"
+
+    class Meta:
+        verbose_name = "Responsable del Trabajo Operativo"
+        verbose_name_plural = "Responsables de los Trabajos Operativos"
+        constraints = [
+            models.UniqueConstraint(
+                fields=['responsable', 'trabajo_operativo'],
+                name='unique_responsable_trabajo_operativo'
+            )
         ]
