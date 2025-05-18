@@ -42,6 +42,7 @@ class Responsable(models.Model):
     nombre = models.CharField(max_length=100)
     apellido = models.CharField(max_length=100)
     rol = models.ForeignKey(RolResponsable, on_delete=models.PROTECT)
+    activo = models.BooleanField(default=True)
 
     historial = HistoricalRecords()
 
@@ -54,7 +55,9 @@ class Responsable(models.Model):
 
 
 class Producto(models.Model):
-    nombre = models.CharField(max_length=200)
+    nombre = models.CharField(max_length=100)
+    identificador = models.CharField(
+        max_length=50, null=True, blank=True, unique=True,)
     descripcion = models.TextField()
     fecha_lanzamiento = models.DateField(default=datetime.date(2010, 1, 1))
     categoria = models.ForeignKey(Categoria, on_delete=models.PROTECT)
