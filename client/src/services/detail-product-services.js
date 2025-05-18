@@ -29,28 +29,31 @@ document.addEventListener("DOMContentLoaded", () => {
         .get(`${CONFIG.API_BASE_URL}/portafolio/productos/${productId}/detail/`)
         .then((response) => {
           const productData = response.data;
-          console.log(response.data); // Inspecciona la estructura de los datos
 
           // Llenar el modal con los datos del producto
-          modalTitle.textContent = productData.nombre;
-          modalDescription.textContent = productData.descripcion;
-          modalReleaseDate.textContent = productData.fecha_lanzamiento;
-          modalCategory.textContent = productData.categoria.nombre;
+          modalTitle.textContent = productData.nombre || "No disponible";
+          modalDescription.textContent =
+            productData.descripcion || "No disponible";
+          modalReleaseDate.textContent =
+            productData.fecha_lanzamiento || "No disponible";
+          modalCategory.textContent =
+            productData.categoria?.nombre || "No disponible";
 
           // Formato del solicitante
           const requesterName =
-            productData.solicitante.nombre || "Solicitante no asignado";
-          const requesterLastName = productData.solicitante.apellido || "";
+            productData.solicitante?.nombre || "Solicitante no asignado";
+          const requesterLastName = productData.solicitante?.apellido || "";
           const requesterDepartment =
-            productData.solicitante.dependencia.nombre ||
+            productData.solicitante?.dependencia?.nombre ||
             "Dependencia no asignada";
           modalRequester.textContent = `${requesterName} ${requesterLastName} - ${requesterDepartment}`;
 
-          // Obtener la clase para el estatus
-          const statusClass = getStatusClass(productData.estatus.nombre);
+          // Estatus con verificación y clase
+          const statusName = productData.estatus?.nombre || "Desconocido";
+          const statusClass = getStatusClass(statusName);
           modalStatus.innerHTML = `
             <span class="tag">
-              <span class="${statusClass}"></span>${productData.estatus.nombre}
+              <span class="${statusClass}"></span>${statusName}
             </span>
           `;
 
@@ -70,38 +73,53 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           }
 
-          // Obtener los tags de las tecnologías
-          const tecnologiaTags = productData.tecnologias
-            .map(
-              (tecnologia) => `
-              <span class="tag">${tecnologia.nombre}</span>`
-            )
-            .join("");
+          // Tecnologías
+          if (
+            Array.isArray(productData.tecnologias) &&
+            productData.tecnologias.length > 0
+          ) {
+            const tecnologiaTags = productData.tecnologias
+              .map(
+                (tecnologia) => `<span class="tag">${tecnologia.nombre}</span>`
+              )
+              .join("");
+            modalTechnologies.innerHTML = tecnologiaTags;
+          } else {
+            modalTechnologies.innerHTML =
+              '<span class="tag">No disponible</span>';
+          }
 
-          // Insertar los tags de tecnologías en el modal
-          modalTechnologies.innerHTML = tecnologiaTags;
-
-          // Limpiar la lista de responsables antes de agregar nuevos elementos
+          // Limpiar la lista de responsables
           modalResponsiblesList.innerHTML = "";
 
-          // Manejar la relación con responsables desde la tabla intermedia
+          // Responsables con valor por defecto
           if (
             Array.isArray(productData.responsables) &&
             productData.responsables.length > 0
           ) {
             productData.responsables.forEach((responsable) => {
               const listItem = document.createElement("li");
-              listItem.textContent = `${responsable.nombre} ${responsable.apellido} - ${responsable.rol}`;
+              const nombre = responsable.nombre || "";
+              const apellido = responsable.apellido || "";
+              const rol = responsable.rol || "Rol no asignado";
+              listItem.textContent = `${nombre} ${apellido} - ${rol}`;
               modalResponsiblesList.appendChild(listItem);
             });
           } else {
             const listItem = document.createElement("li");
-            listItem.textContent = "No responsables asignados";
+            listItem.textContent = "No hay responsables asignados";
             modalResponsiblesList.appendChild(listItem);
           }
 
-          // Configurar el enlace del botón
-          modalUrlButton.href = productData.direccion_url;
+          // URL del botón con valor por defecto
+          modalUrlButton.href = productData.direccion_url || "#";
+          if (!productData.direccion_url) {
+            modalUrlButton.classList.add("disabled");
+            modalUrlButton.textContent = "URL no disponible";
+          } else {
+            modalUrlButton.classList.remove("disabled");
+            modalUrlButton.textContent = "Visitar sitio";
+          }
         })
         .catch((error) => {
           console.error("Error al obtener los detalles del producto:", error);
