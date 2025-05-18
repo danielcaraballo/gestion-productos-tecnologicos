@@ -1,0 +1,238 @@
+[
+  {
+    "model": "catalogos.estatus",
+    "pk": 1,
+    "fields": {
+      "nombre": "Operativo"
+    }
+  },
+  {
+    "model": "catalogos.estatus",
+    "pk": 2,
+    "fields": {
+      "nombre": "Mantenimiento"
+    }
+  },
+  {
+    "model": "catalogos.estatus",
+    "pk": 3,
+    "fields": {
+      "nombre": "Inactivo"
+    }
+  },
+  {
+    "model": "catalogos.estatus",
+    "pk": 4,
+    "fields": {
+      "nombre": "Retirado"
+    }
+  },
+  {
+    "model": "catalogos.categoria",
+    "pk": 1,
+    "fields": {
+      "nombre": "Aplicacion web"
+    }
+  },
+  {
+    "model": "catalogos.categoria",
+    "pk": 2,
+    "fields": {
+      "nombre": "Portal Web"
+    }
+  },
+  {
+    "model": "catalogos.enfoquetecnologia",
+    "pk": 1,
+    "fields": {
+      "nombre": "Base de datos"
+    }
+  },
+  {
+    "model": "catalogos.enfoquetecnologia",
+    "pk": 2,
+    "fields": {
+      "nombre": "Backend"
+    }
+  },
+  {
+    "model": "catalogos.enfoquetecnologia",
+    "pk": 3,
+    "fields": {
+      "nombre": "Frontend"
+    }
+  },
+  {
+    "model": "catalogos.lenguajeprogramacion",
+    "pk": 1,
+    "fields": {
+      "nombre": "Python"
+    }
+  },
+  {
+    "model": "catalogos.lenguajeprogramacion",
+    "pk": 2,
+    "fields": {
+      "nombre": "JavaScript"
+    }
+  },
+  {
+    "model": "catalogos.lenguajeprogramacion",
+    "pk": 3,
+    "fields": {
+      "nombre": "PHP"
+    }
+  },
+  {
+    "model": "catalogos.lenguajeprogramacion",
+    "pk": 4,
+    "fields": {
+      "nombre": "Java"
+    }
+  },
+  {
+    "model": "catalogos.lenguajeprogramacion",
+    "pk": 5,
+    "fields": {
+      "nombre": "TypeScript"
+    }
+  },
+  {
+    "model": "catalogos.tecnologia",
+    "pk": 1,
+    "fields": {
+      "nombre": "Django",
+      "enfoque": 2,
+      "lenguaje": 1
+    }
+  },
+  {
+    "model": "catalogos.tecnologia",
+    "pk": 2,
+    "fields": {
+      "nombre": "PHP",
+      "enfoque": 2,
+      "lenguaje": 3
+    }
+  },
+  {
+    "model": "catalogos.tecnologia",
+    "pk": 3,
+    "fields": {
+      "nombre": "Vue",
+      "enfoque": 3,
+      "lenguaje": 2
+    }
+  },
+  {
+    "model": "catalogos.tecnologia",
+    "pk": 4,
+    "fields": {
+      "nombre": "React",
+      "enfoque": 3,
+      "lenguaje": 2
+    }
+  },
+  {
+    "model": "catalogos.tecnologia",
+    "pk": 5,
+    "fields": {
+      "nombre": "Nest",
+      "enfoque": 2,
+      "lenguaje": 5
+    }
+  },
+  {
+    "model": "catalogos.tecnologia",
+    "pk": 6,
+    "fields": {
+      "nombre": "Yii2",
+      "enfoque": 2,
+      "lenguaje": 3
+    }
+  },
+  {
+    "model": "catalogos.cargosolicitante",
+    "pk": 1,
+    "fields": {
+      "nombre": "Director General"
+    }
+  },
+  {
+    "model": "catalogos.cargosolicitante",
+    "pk": 2,
+    "fields": {
+      "nombre": "Director"
+    }
+  },
+  {
+    "model": "catalogos.cargosolicitante",
+    "pk": 3,
+    "fields": {
+      "nombre": "Jefe de División"
+    }
+  },
+  {
+    "model": "catalogos.cargosolicitante",
+    "pk": 4,
+    "fields": {
+      "nombre": "Coordinador"
+    }
+  },
+  {
+    "model": "catalogos.rolresponsable",
+    "pk": 1,
+    "fields": {
+      "nombre": "Gestor de Proyectos"
+    }
+  },
+  {
+    "model": "catalogos.rolresponsable",
+    "pk": 2,
+    "fields": {
+      "nombre": "Analista de Requerimientos"
+    }
+  },
+  {
+    "model": "catalogos.rolresponsable",
+    "pk": 3,
+    "fields": {
+      "nombre": "Programador FullStack"
+    }
+  },
+  {
+    "model": "catalogos.rolresponsable",
+    "pk": 4,
+    "fields": {
+      "nombre": "Programador Backend"
+    }
+  },
+  {
+    "model": "catalogos.rolresponsable",
+    "pk": 5,
+    "fields": {
+      "nombre": "Programador Frontend"
+    }
+  },
+  {
+    "model": "catalogos.tipocomponente",
+    "pk": 1,
+    "fields": {
+      "nombre": "Administrador"
+    }
+  },
+  {
+    "model": "catalogos.tipocomponente",
+    "pk": 2,
+    "fields": {
+      "nombre": "Cliente"
+    }
+  },
+  {
+    "model": "catalogos.tipocomponente",
+    "pk": 3,
+    "fields": {
+      "nombre": "Bot"
+    }
+  }
+]

@@ -1,13 +1,13 @@
 [
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 1,
         "fields": {
             "nombre": "Dirección General del Despacho"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 1,
         "fields": {
             "nombre": "Dirección de Agenda Ministerial",
@@ -15,7 +15,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 2,
         "fields": {
             "nombre": "Dirección de Apoyo Técnico",
@@ -23,14 +23,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 2,
         "fields": {
             "nombre": "Dirección General de la Oficina Estratégica de Seguimiento y Evaluación de Políticas Públicas"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 3,
         "fields": {
             "nombre": "Dirección de Seguimiento de Políticas Públicas",
@@ -38,7 +38,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 4,
         "fields": {
             "nombre": "Dirección de Evaluación de Políticas Públicas",
@@ -46,7 +46,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 5,
         "fields": {
             "nombre": "Dirección de Estadísticas Educativas",
@@ -54,14 +54,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 3,
         "fields": {
             "nombre": "Dirección General de la Consultoría Jurídica"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 6,
         "fields": {
             "nombre": "Dirección de Asesoría Jurídica",
@@ -69,7 +69,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 7,
         "fields": {
             "nombre": "Dirección de Litigios",
@@ -77,14 +77,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 4,
         "fields": {
             "nombre": "Dirección General de la Oficina de Auditoría Interna"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 8,
         "fields": {
             "nombre": "Dirección de Control Posterior",
@@ -92,7 +92,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 9,
         "fields": {
             "nombre": "Dirección de Determinación de Responsabilidades",
@@ -100,14 +100,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 5,
         "fields": {
             "nombre": "Dirección General de la Oficina de Atención Ciudadana"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 10,
         "fields": {
             "nombre": "División de Atención Social",
@@ -115,7 +115,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 11,
         "fields": {
             "nombre": "División de Articulación y Participación Comunitaria",
@@ -123,14 +123,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 6,
         "fields": {
             "nombre": "Dirección General de la Oficina de Gestión Comunicacional"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 12,
         "fields": {
             "nombre": "Dirección de Comunicación",
@@ -138,7 +138,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 13,
         "fields": {
             "nombre": "Dirección de Eventos y Protocolo",
@@ -146,14 +146,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 7,
         "fields": {
             "nombre": "Dirección General de la Oficina de Planificación y Presupuesto"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 14,
         "fields": {
             "nombre": "Dirección de Planificación",
@@ -161,7 +161,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 15,
         "fields": {
             "nombre": "Dirección de Presupuesto",
@@ -169,7 +169,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 16,
         "fields": {
             "nombre": "Dirección de Organización y Optimización de Procesos",
@@ -177,14 +177,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 8,
         "fields": {
             "nombre": "Dirección General de la Oficina de Gestión Humana"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 17,
         "fields": {
             "nombre": "Dirección de Nómina",
@@ -192,7 +192,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 18,
         "fields": {
             "nombre": "Dirección de Registro de Personal",
@@ -200,7 +200,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 19,
         "fields": {
             "nombre": "Dirección de Ingresos y Clasificación",
@@ -208,7 +208,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 20,
         "fields": {
             "nombre": "División de Ingresos",
@@ -216,7 +216,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 21,
         "fields": {
             "nombre": "División de Clasificación",
@@ -224,7 +224,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 22,
         "fields": {
             "nombre": "Dirección de Planificación, Evaluación y Desarrollo",
@@ -232,7 +232,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 23,
         "fields": {
             "nombre": "Dirección de Egresos",
@@ -240,7 +240,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 24,
         "fields": {
             "nombre": "División de Prestaciones Sociales",
@@ -248,7 +248,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 25,
         "fields": {
             "nombre": "División de Trámites de Egreso",
@@ -256,14 +256,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 9,
         "fields": {
             "nombre": "Dirección de Asuntos Gremiales y Laborales"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 26,
         "fields": {
             "nombre": "División de Asesoría Laboral",
@@ -271,7 +271,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 27,
         "fields": {
             "nombre": "División de Convenciones Colectivas",
@@ -279,7 +279,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 28,
         "fields": {
             "nombre": "División de Participación y Protección Social de los Trabajadores y Trabajadoras",
@@ -287,7 +287,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 29,
         "fields": {
             "nombre": "División del Sistema Integral de Salud",
@@ -295,14 +295,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 10,
         "fields": {
             "nombre": "Dirección General de la Oficina de Gestión Administrativa"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 30,
         "fields": {
             "nombre": "Dirección de Finanzas",
@@ -310,7 +310,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 31,
         "fields": {
             "nombre": "División de Registro Presupuestario",
@@ -318,7 +318,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 32,
         "fields": {
             "nombre": "División de Tesorería",
@@ -326,7 +326,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 33,
         "fields": {
             "nombre": "División de Contabilidad",
@@ -334,7 +334,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 34,
         "fields": {
             "nombre": "Dirección de Administración",
@@ -342,7 +342,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 35,
         "fields": {
             "nombre": "División de Compras y Servicios",
@@ -350,7 +350,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 36,
         "fields": {
             "nombre": "División de Bienes Públicos",
@@ -358,14 +358,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 11,
         "fields": {
             "nombre": "Dirección de Infraestructura y Mantenimiento"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 37,
         "fields": {
             "nombre": "División de Mantenimiento y Servicios Básicos",
@@ -373,7 +373,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 38,
         "fields": {
             "nombre": "División de Transporte",
@@ -381,7 +381,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 39,
         "fields": {
             "nombre": "División de Seguridad",
@@ -389,7 +389,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 40,
         "fields": {
             "nombre": "División de Gestión Energética",
@@ -397,14 +397,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 12,
         "fields": {
             "nombre": "Dirección General de la Oficina de Tecnologías de la Información y la Comunicación"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 41,
         "fields": {
             "nombre": "Dirección de Sistemas de Información e Innovación Tecnológica",
@@ -412,7 +412,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 42,
         "fields": {
             "nombre": "División de Sistemas de Información",
@@ -420,7 +420,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 43,
         "fields": {
             "nombre": "División de Innovación y Gestión Tecnológica",
@@ -428,7 +428,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 44,
         "fields": {
             "nombre": "División de Apoyo Tecnológico",
@@ -436,7 +436,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 45,
         "fields": {
             "nombre": "Dirección de Infraestructura Tecnológica y Seguridad de la Información",
@@ -444,14 +444,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 13,
         "fields": {
             "nombre": "Dirección General de la Oficina de Integración y Asuntos Internacionales"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 46,
         "fields": {
             "nombre": "Dirección de Organismos Multilaterales y de Integración Regional",
@@ -459,7 +459,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 47,
         "fields": {
             "nombre": "Dirección de Relaciones Bilaterales y Cooperación Estratégica",
@@ -467,14 +467,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 14,
         "fields": {
             "nombre": "Despacho del Viceministro(a) de Educación"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 48,
         "fields": {
             "nombre": "Dirección General de Currículo",
@@ -482,7 +482,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 49,
         "fields": {
             "nombre": "Dirección de Procesos Curriculares",
@@ -490,7 +490,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 50,
         "fields": {
             "nombre": "Dirección de Proyectos y Programas Especiales",
@@ -498,7 +498,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 51,
         "fields": {
             "nombre": "Dirección General de Recursos para el Aprendizaje",
@@ -506,7 +506,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 52,
         "fields": {
             "nombre": "Dirección de Textos y Otros Materiales Educativos",
@@ -514,7 +514,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 53,
         "fields": {
             "nombre": "Dirección de Recursos Audiovisuales",
@@ -522,7 +522,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 54,
         "fields": {
             "nombre": "Dirección de Informática Educativa",
@@ -530,7 +530,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 55,
         "fields": {
             "nombre": "Dirección General de Investigación y Formación Docente",
@@ -538,7 +538,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 56,
         "fields": {
             "nombre": "Dirección de Programas de Formación",
@@ -546,7 +546,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 57,
         "fields": {
             "nombre": "Dirección de Eventos Académicos",
@@ -554,7 +554,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 58,
         "fields": {
             "nombre": "Dirección General de Supervisión y Evaluación del Sistema Educativo",
@@ -562,7 +562,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 59,
         "fields": {
             "nombre": "Dirección de Supervisión del Sistema Educativo",
@@ -570,7 +570,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 60,
         "fields": {
             "nombre": "Dirección de Evaluación del Sistema Educativo",
@@ -578,7 +578,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 61,
         "fields": {
             "nombre": "Dirección General de Registro y Control Académico",
@@ -586,7 +586,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 62,
         "fields": {
             "nombre": "Dirección del Sistema de Gestión Escolar",
@@ -594,7 +594,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 63,
         "fields": {
             "nombre": "Dirección de Archivo Académico",
@@ -602,7 +602,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 64,
         "fields": {
             "nombre": "Dirección de Certificaciones y Acreditaciones",
@@ -610,14 +610,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 15,
         "fields": {
             "nombre": "Despacho del Viceministro(a) de Educación Inicial y Primaria"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 65,
         "fields": {
             "nombre": "Dirección General de Educación Inicial",
@@ -625,7 +625,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 66,
         "fields": {
             "nombre": "Dirección de Educación Maternal",
@@ -633,7 +633,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 67,
         "fields": {
             "nombre": "Dirección de Educación Preescolar",
@@ -641,14 +641,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 16,
         "fields": {
             "nombre": "Dirección General de Educación Primaria"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 68,
         "fields": {
             "nombre": "Dirección de Proyectos de Educación Primaria",
@@ -656,7 +656,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 69,
         "fields": {
             "nombre": "Dirección de Seguimiento Institucional de Educación Primaria",
@@ -664,14 +664,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 17,
         "fields": {
             "nombre": "Dirección General de Educación Especial"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 70,
         "fields": {
             "nombre": "Dirección de Áreas de Atención y Programas de Apoyo",
@@ -679,7 +679,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 71,
         "fields": {
             "nombre": "Dirección de Procesos Estratégicos de Educación Especial",
@@ -687,14 +687,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 18,
         "fields": {
             "nombre": "Despacho del Viceministro(a) de Educación Media"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 72,
         "fields": {
             "nombre": "Dirección General de Educación Media General",
@@ -702,7 +702,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 73,
         "fields": {
             "nombre": "Dirección de Proyectos de Educación Media General",
@@ -710,7 +710,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 74,
         "fields": {
             "nombre": "Dirección de Seguimiento Institucional de Educación Media General",
@@ -718,14 +718,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 19,
         "fields": {
             "nombre": "Dirección General de Educación Media Técnica"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 75,
         "fields": {
             "nombre": "Dirección de Educación Productiva",
@@ -733,7 +733,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 76,
         "fields": {
             "nombre": "Dirección de Proyectos de Educación Media Técnica",
@@ -741,7 +741,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 77,
         "fields": {
             "nombre": "Dirección de Seguimiento Institucional de Educación Media Técnica",
@@ -749,14 +749,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 20,
         "fields": {
             "nombre": "Dirección General de Educación de Jóvenes, Adultas y Adultos"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 78,
         "fields": {
             "nombre": "Dirección de Centros de Servicios de Educación de Jóvenes, Adultas y Adultos",
@@ -764,7 +764,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 79,
         "fields": {
             "nombre": "Dirección de Educación a lo Largo de Toda la Vida",
@@ -772,14 +772,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 21,
         "fields": {
             "nombre": "Despacho del Viceministro(a) de Comunidades Educativas y Unión con el Pueblo"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 80,
         "fields": {
             "nombre": "Dirección General de Comunidades Educativas",
@@ -787,7 +787,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 81,
         "fields": {
             "nombre": "Dirección de Consejos Educativos",
@@ -795,7 +795,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 82,
         "fields": {
             "nombre": "Dirección de Convivencia Escolar y Diálogo de Saberes",
@@ -803,14 +803,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 22,
         "fields": {
             "nombre": "Dirección General de Protección y Desarrollo Estudiantil"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 83,
         "fields": {
             "nombre": "Dirección de Protección Socioeconómica y Salud",
@@ -818,7 +818,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 84,
         "fields": {
             "nombre": "Dirección de Participación y Desarrollo Estudiantil",
@@ -826,14 +826,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 23,
         "fields": {
             "nombre": "Dirección General de Educación Intercultural"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 85,
         "fields": {
             "nombre": "Dirección de Educación Intercultural",
@@ -841,7 +841,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 86,
         "fields": {
             "nombre": "Dirección de Educación Indígena",
@@ -849,7 +849,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 87,
         "fields": {
             "nombre": "Dirección de Educación en Fronteras",
@@ -857,14 +857,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 24,
         "fields": {
             "nombre": "Dirección General de Cultura"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 88,
         "fields": {
             "nombre": "Dirección de Arte y Pedagogía",
@@ -872,7 +872,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 89,
         "fields": {
             "nombre": "Dirección de Promoción Cultural",
@@ -880,14 +880,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 25,
         "fields": {
             "nombre": "Dirección General de Educación Física y Deporte"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 90,
         "fields": {
             "nombre": "Dirección de Educación Física y Deporte",
@@ -895,7 +895,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 91,
         "fields": {
             "nombre": "Dirección de Programación Deportiva",
@@ -903,14 +903,14 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 26,
         "fields": {
             "nombre": "Despacho del Viceministro(a) de Instalaciones y Logística"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 92,
         "fields": {
             "nombre": "Dirección General de Proyectos y Obras",
@@ -918,7 +918,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 93,
         "fields": {
             "nombre": "Dirección de Proyectos",
@@ -926,7 +926,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 94,
         "fields": {
             "nombre": "Dirección de Obras",
@@ -934,21 +934,21 @@
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 27,
         "fields": {
             "nombre": "Dirección General de Logística"
         }
     },
     {
-        "model": "productos.dependencia",
+        "model": "catalogos.dependencia",
         "pk": 28,
         "fields": {
             "nombre": "Dirección General de Mantenimiento"
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 95,
         "fields": {
             "nombre": "Dirección de Mantenimiento Preventivo",
@@ -956,7 +956,7 @@
         }
     },
     {
-        "model": "productos.subdependencia",
+        "model": "catalogos.subdependencia",
         "pk": 96,
         "fields": {
             "nombre": "Dirección de Mantenimiento Correctivo",
