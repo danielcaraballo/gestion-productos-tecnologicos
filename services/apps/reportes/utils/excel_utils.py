@@ -10,7 +10,7 @@ def generate_excel_report(data):
     header_fill = PatternFill(start_color="D9E1F2",
                               end_color="D9E1F2", fill_type="solid")
     header_font = Font(bold=True)
-    title_font = Font(bold=True, size=14)
+    title_font = Font(bold=True, size=16)
 
     # --- HOJA RESUMEN ---
     ws_summary = wb.active
@@ -62,7 +62,7 @@ def generate_excel_report(data):
     # Encabezados
     headers = [
         "Nombre", "Descripción", "Categoría",
-        "Dependencia", "Subdependencia",
+        "Dependencia Usuaria", "Subdependencia Usuaria",
         "Componentes (Tipo)", "URLs Componentes", "Estatus"
     ]
     ws_all.append(headers)

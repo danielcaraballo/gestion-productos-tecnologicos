@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import reporte_productos_excel
+from .views import reporte_general_excel
 
 urlpatterns = [
-    path('productos/excel/', reporte_productos_excel,
-         name='product_report_excel'),
+    path('general/excel/', reporte_general_excel,
+         name='reporte_general_excel'),
 ]
