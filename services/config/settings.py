@@ -54,6 +54,7 @@ BASE_APPS = [
 LOCALS_APPS = [
     'apps.catalogos',
     'apps.portafolio',
+    'apps.reportes',
     'apps.usuarios',
 ]
 
