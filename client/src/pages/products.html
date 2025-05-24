@@ -42,10 +42,13 @@
         <!-- Page header -->
         <div class="page-header d-print-none text-white">
           <div class="container-xl">
-            <div class="row g-2 align-items-center">
-              <div class="col">
+            <div class="row g-2 align-items-center justify-content-between">
+              <div class="col-auto">
                 <div class="page-pretitle">Vista</div>
                 <h2 class="page-title">Productos</h2>
+              </div>
+              <div class="col-auto">
+                <btn-report-excel></btn-report-excel>
               </div>
             </div>
           </div>
@@ -144,7 +147,10 @@
     <!-- Scripts -->
     <script src="../services/auth.js" type="module"></script>
     <script src="../services/products.js" type="module"></script>
+    <script src="../services/report-excel.js" type="module"></script>
     <script src="../components/components.js" type="module" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Tabler Core -->
     <script src="../assets/js/tabler.min.js" defer></script>

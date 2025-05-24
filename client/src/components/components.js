@@ -7,3 +7,4 @@ import "./status-counter.js";
 import "./products-counter.js";
 import "./technologies-counter.js";
 import "./detail-product.js";
+import "./btn-report-excel.js";
