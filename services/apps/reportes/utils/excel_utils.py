@@ -1,4 +1,5 @@
 from openpyxl import Workbook
+from openpyxl.styles import Font, Alignment
 from openpyxl.utils import get_column_letter
 
 
@@ -22,17 +23,25 @@ def _create_summary_sheet(wb, data):
     ws = wb.active
     ws.title = "Resumen"
 
-    # Títulos principales
+    # Definir el estilo de título
+    estilo_titulo = Font(name='Calibri', bold=True, size=12)
+    alineacion_centrada = Alignment(horizontal='center')
+
+    # Título principal
     ws.append(["PORTAFOLIO DE PRODUCTOS TECNOLÓGICOS"])
     ws.merge_cells('A1:B1')
+    ws['A1'].font = estilo_titulo
+    ws['A1'].alignment = alineacion_centrada
 
     ws.append(["Oficina de Tecnologías de la Información y la Comunicación"])
     ws.merge_cells('A2:B2')
     ws.append([])
 
     # Estadísticas básicas
-    ws.append(["Total de productos:", data['stats']['total_productos']])
+    ws.append(["Total de Productos", data['stats']['total_productos']])
     ws.append([])
+    ws['A4'].font = estilo_titulo
+    ws['A4'].alignment = alineacion_centrada
 
     # Secciones de distribución
     distributions = [
@@ -45,11 +54,12 @@ def _create_summary_sheet(wb, data):
     for key, field, title in distributions:
         ws.append([title])
         ws.merge_cells(f'A{ws.max_row}:B{ws.max_row}')
+        ws[f'A{ws.max_row}'].font = estilo_titulo
+        ws[f'A{ws.max_row}'].alignment = alineacion_centrada
 
         if key in data['stats']:
             for item in data['stats'][key]:
                 name = item[field] or "Sin especificar"
-                # Ahora ponemos el valor directamente en la columna B
                 ws.append([name, item['total']])
 
         ws.append([])
@@ -68,13 +78,30 @@ def _create_detail_sheet(wb, data):
     """Crea hoja con detalle completo de productos"""
     ws = wb.create_sheet("Detalle")
 
-    # Encabezados
+    # Definir el estilo de título
+    estilo_titulo = Font(name='Calibri', bold=True, size=12)
+    alineacion_centrada = Alignment(horizontal='center')
+
+    # Título de la hoja
+    ws.append(["DETALLE DEL PORTAFOLIO DE PRODUCTOS TECNOLÓGICOS"])
+    ws.merge_cells('A1:G1')
+    ws['A1'].font = estilo_titulo
+    ws['A1'].alignment = alineacion_centrada
+    ws.append([])
+
+    # Encabezados de tabla
     headers = [
         "Nombre", "Descripción", "Categoría",
         "Dependencia", "Subdependencia",
         "Componentes", "URLs"
     ]
     ws.append(headers)
+
+    # Aplicar estilo a los encabezados
+    for col in range(1, 8):
+        celda = ws.cell(row=3, column=col)
+        celda.font = estilo_titulo
+        celda.alignment = alineacion_centrada
 
     # Datos de productos
     for prod in data['productos']:
@@ -96,6 +123,10 @@ def _create_detail_sheet(wb, data):
 
 def _create_status_sheets(wb, data):
     """Crea hojas separadas por estatus de producto"""
+    # Definir el estilo de título
+    estilo_titulo = Font(name='Calibri', bold=True, size=12)
+    alineacion_centrada = Alignment(horizontal='center')
+
     # Agrupación por estatus
     status_groups = {}
     for prod in data['productos']:
@@ -106,13 +137,26 @@ def _create_status_sheets(wb, data):
     for status, products in status_groups.items():
         ws = wb.create_sheet(_clean_sheet_name(status))
 
-        # Mismos headers que hoja detalle
+        # Título de la hoja
+        ws.append([f"PRODUCTOS - {status.upper()}"])
+        ws.merge_cells('A1:G1')
+        ws['A1'].font = estilo_titulo
+        ws['A1'].alignment = alineacion_centrada
+        ws.append([])
+
+        # Encabezados de tabla
         headers = [
             "Nombre", "Descripción", "Categoría",
             "Dependencia", "Subdependencia",
             "Componentes", "URLs"
         ]
         ws.append(headers)
+
+        # Aplicar estilo a los encabezados
+        for col in range(1, 8):
+            celda = ws.cell(row=3, column=col)
+            celda.font = estilo_titulo
+            celda.alignment = alineacion_centrada
 
         # Agregar productos
         for prod in products:
